@@ -1,14 +1,35 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-us">
-
 <head>
-	<meta charset="utf-8" />
-	<title>Play Super Mario Bros | HTML5</title>
-	<meta name="keywords" content="fullscreenmario, playmario, play, mario, super, online game, html5, super mario, new mario games, bowser, mushroom kingdom, 3d mario, mario 3ds, mario ds, Bros, JavaScript, MVC, Level, Leveleditor" />
-	<meta name="description" content="PlayMario.org is a free HTML5 remake of Nintendo's original Super Mario Bros. Play it here!" />
-	<link href="assets/index.min.css" rel="stylesheet" />
-	<link href="assets/modal.css" rel="stylesheet" />
-	<link href="favicon.ico" rel="shortcut icon">
+    <meta charset="utf-8" />
+    <title>Play Super Mario Bros | HTML5</title>
+    <meta name="keywords" content="fullscreenmario, playmario, play, mario, super, online game, html5, super mario, new mario games, bowser, mushroom kingdom, flash mario, Bros, JavaScript, MVC, Level, Leveleditor" />
+    <meta name="description" content="PlayMario.org is a free HTML5 remake of Nintendo's original Super Mario Bros. Play it here!" />
+    <link href="assets/index.min.css" rel="stylesheet" />
+    <link href="assets/modal.css" rel="stylesheet" />
+    <link href="favicon.ico" rel="shortcut icon">
+    <!-- PopAds.net Popunder Code for playmario.org -->
+    <script type="text/javascript">
+        var _pop = _pop || [];
+        _pop.push(['siteId', 1133876]);
+        _pop.push(['minBid', 0.000000]);
+        _pop.push(['popundersPerIP', 0]);
+        _pop.push(['delayBetween', 0]);
+        _pop.push(['default', false]);
+        _pop.push(['defaultPerDay', 0]);
+        _pop.push(['topmostLayer', false]);
+        (function() {
+        var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.async = true;
+        var s = document.getElementsByTagName('script')[0]; 
+        pa.src = '//c1.popads.net/pop.js';
+        pa.onerror = function() {
+        var sa = document.createElement('script'); sa.type = 'text/javascript'; sa.async = true;
+        sa.src = '//c2.popads.net/pop.js';
+        s.parentNode.insertBefore(sa, s);
+        };
+        s.parentNode.insertBefore(pa, s);
+        })();
+    </script>
 </head>
 <body onload="setInterval(askForDonation, 1140000);">
 	<header>
@@ -53,9 +74,7 @@
 	<center id="donation">
 		<hr><br>
 		<table>
-			<tr>
-				<center><b>Help us to maintain this website and keep ads to a minimum:</b></center>
-			</tr>
+			<tr><center><b>Help us to maintain this website and keep ads to a minimum:</b></center></tr>
 			<tr>
 				<td>
 					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -72,10 +91,9 @@
 				<td>&nbsp;</td>
 				<td>
 					<input type="hidden" name="currency_code" value="USD"><br>
-					<input type="image" src="assets/btn_donate.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
-					<img alt="" border="0" src="assets/pixel.gif" width="1" height="1">
+					<input type="image" src="assets/btn_donate.gif" border="0" name="submit" alt="PayPal � The safer, easier way to pay online.">
+					<img alt="" border="0" src="assets/pixel.gif" width="1" height="1"></form>
 				</td>
-				</form>
 				<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 				<td>&nbsp;|<br>or<br>&nbsp;|</td>
 				<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
@@ -86,6 +104,7 @@
 		</table>
 	</center><br>
 
+    <!--  =======================  GAME CORE FILES  ========================  -->
     <script src="References/AreaSpawnr-0.2.0.js" type="text/javascript"></script>
     <script src="References/AudioPlayr-0.2.1.js" type="text/javascript"></script>
     <script src="References/ChangeLinr-0.2.0.js" type="text/javascript"></script>
