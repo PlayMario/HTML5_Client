@@ -1,0 +1,1 @@
+window.online = navigator.onLine;

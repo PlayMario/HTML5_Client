@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# Time: Wed Feb 24 2016 08:35:02 GMT+0500 (UTC)
+# Time: Wed Feb 27 2016 08:35:02
 
 CACHE:
 /assets/index.min.css
@@ -15,6 +15,13 @@ CACHE:
 /favicon.ico
 /assets/loading.gif
 
+# FALLBACK files
+/Fonts/google-fonts/lato.woff2
+/Fonts/google-fonts/ubuntu.woff2
+/Fonts/google-fonts/ubuntu-bold.woff2
+/Fonts/google-fonts.css
+/assets/exclamation.png
+
 #MP3 files
 /Sounds/Sounds/mp3/Bump.mp3
 /Sounds/Sounds/mp3/Coin.mp3
@@ -28,6 +35,10 @@ CACHE:
 /Sounds/Sounds/mp3/Pause.mp3
 /Sounds/Sounds/mp3/Pipe.mp3
 /Sounds/Sounds/mp3/Powerup.mp3
+/Sounds/Sounds/mp3/JumpSuper.mp3
+/Sounds/Sounds/mp3/JumpSmall.mp3
+/Sounds/Sounds/mp3/PlayerDies.mp3
+/Sounds/Sounds/mp3/PowerupAppears.mp3
 
 /References/AreaSpawnr-0.2.0.js
 /References/AudioPlayr-0.2.1.js
@@ -116,5 +127,11 @@ CACHE:
 /settings/ui.js
 /index.js
 
+FALLBACK:
+# workaround to detect whether a 404 or No Internet.
+/assets/online.js /assets/offline.js 
+/ /appcache-fallback.html
+
 NETWORK:
+/assets/online.js
 *
