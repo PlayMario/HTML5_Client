@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# Time: Wed Feb 27 2016 08:35:02
+# Time: Wed Feb 27 2016 21:35:17
 
 CACHE:
 /assets/index.min.css
@@ -8,8 +8,6 @@ CACHE:
 /assets/modal.js
 /assets/btn_donate.gif
 /assets/bdg_now_accepting_pp.png
-/assets/pixel.gif
-/assets/logo-small.png
 /assets/logo-large.png
 /assets/coinbase.png
 /favicon.ico
