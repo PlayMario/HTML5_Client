@@ -6,6 +6,7 @@ CACHE:
 /assets/index.min.css
 /assets/modal.css
 /assets/modal.js
+/assets/jquery-1.12.2.min.js
 /assets/popads.js
 /assets/btn_donate.gif
 /assets/bdg_now_accepting_pp.png
