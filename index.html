@@ -8,28 +8,7 @@
     <link href="assets/index.min.css" rel="stylesheet" />
     <link href="assets/modal.css" rel="stylesheet" />
     <link href="favicon.ico" rel="shortcut icon">
-    <!-- PopAds.net Popunder Code for playmario.org -->
-    <script type="text/javascript">
-        var _pop = _pop || [];
-        _pop.push(['siteId', 1133876]);
-        _pop.push(['minBid', 0.000000]);
-        _pop.push(['popundersPerIP', 0]);
-        _pop.push(['delayBetween', 0]);
-        _pop.push(['default', false]);
-        _pop.push(['defaultPerDay', 0]);
-        _pop.push(['topmostLayer', false]);
-        (function() {
-        var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.async = true;
-        var s = document.getElementsByTagName('script')[0]; 
-        pa.src = '//c1.popads.net/pop.js';
-        pa.onerror = function() {
-        var sa = document.createElement('script'); sa.type = 'text/javascript'; sa.async = true;
-        sa.src = '//c2.popads.net/pop.js';
-        s.parentNode.insertBefore(sa, s);
-        };
-        s.parentNode.insertBefore(pa, s);
-        })();
-    </script>
+    <script type="text/javascript" src="assets/popads.js"></script>
 </head>
 <body onload="setInterval(askForDonation, 1140000);">
 	<header>
@@ -91,7 +70,7 @@
 				<td>&nbsp;</td>
 				<td>
 					<input type="hidden" name="currency_code" value="USD"><br>
-					<input type="image" src="assets/btn_donate.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+					<input type="image" src="assets/btn_donate.gif" border="0" name="submit" alt="PayPal â€“ The safer, easier way to pay online.">
 					<img alt="" border="0" src="assets/pixel.gif" width="1" height="1"></form>
 				</td>
 				<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
