@@ -1,17 +1,19 @@
 CACHE MANIFEST
 
-# Time: Wed Feb 27 2016 21:35:17
+# Time: Fri Mar 18 2016 13:35:17
 
 CACHE:
 /assets/index.min.css
 /assets/modal.css
 /assets/modal.js
+/assets/popads.js
 /assets/btn_donate.gif
 /assets/bdg_now_accepting_pp.png
 /assets/logo-large.png
 /assets/coinbase.png
-/favicon.ico
 /assets/loading.gif
+/assets/animate.css
+/favicon.ico
 
 # FALLBACK files
 /Fonts/google-fonts/lato.woff2
@@ -68,7 +70,6 @@ CACHE:
 /References/UserWrappr-0.2.0.js
 /References/WorldSeedr-0.2.0.js
 /References/js_beautify.js
-/PlayMarioJas.js
 /settings/audio.js
 /settings/collisions.js
 /settings/devices.js
@@ -124,6 +125,7 @@ CACHE:
 /settings/touch.js
 /settings/ui.js
 /index.js
+/PlayMarioJas.js
 
 FALLBACK:
 # workaround to detect whether a 404 or No Internet.
