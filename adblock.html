@@ -20,12 +20,12 @@
 <div id="no_internet">
     <h1>Adblocker Detected</h1>
     <div>
-        <p align="justify">Please turn off the Adblocker or whitelist us in your browser to start playing. At <b>www.playmario.org</b>, we rely heavily on advertisement revenue and donations to maintain the running costs of this website (domain, server, cloudflare, ssl) . if you don't want to disable adblocking, consider <a href="#donation"  onClick="Donate();">donating</a> instead or you won't be able to play anymore. <a href="/" style="float: right;">&laquo; PlayMario.org</a></p>
+        <p align="justify">Please turn off the Adblocker or whitelist us in your browser to start playing. At <b>www.playmario.org</b>, we rely heavily on advertisement revenue and donations to maintain the running costs of this website (domain, server, cloudflare, ssl) . if you don't want to disable adblocking, consider <a href="#donation" onClick="ShowDonate();">donating</a> instead or you won't be able to play anymore. <a href="/" style="float:right">&laquo; PlayMario.org</a></p>
     </div>
 </div>
 </article><br>
 <!--  =======================  DONATION FOR GAME START  ========================  -->
-<center id="donation" class="animated">
+<center id="donation">
 	<hr><br>
 	<table>
 		<tr><center><b>Help us to maintain this website and keep ads to a minimum:</b></center></tr>
@@ -59,6 +59,7 @@
 </center>
 <!--  =======================  DONATION FOR GAME END  ========================  -->
 </div>
+<script type="text/javascript" src="assets/jquery-1.12.2.min.js"></script>
 <script type="text/javascript">
 	var adtest = document.createElement('div');
 	adtest.innerHTML = '&nbsp;';
@@ -66,15 +67,20 @@
 	document.body.appendChild(adtest);
 	window.setTimeout(function () {
 		if (adtest.offsetHeight != 0) {
-			window.location = "/";
+			// window.location = "/";
 		}
 		adtest.remove();
 	}, 100);
-	function Donate(){
-		document.getElementById('donation').className += 'tada'
-	}
-	function RemoveTada(){
-		document.getElementById('donation').className -= 'tada'
+	$.fn.extend({
+    animateCss: function (animationName) {
+        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        $(this).addClass('animated ' + animationName).one(animationEnd, function() {
+            $(this).removeClass('animated ' + animationName);
+        });
+    }
+	});
+	function ShowDonate(){
+		$('#donation').animateCss('headShake');
 	}
 </script>
 </body>
