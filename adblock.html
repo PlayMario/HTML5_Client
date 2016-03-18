@@ -67,17 +67,17 @@
 	document.body.appendChild(adtest);
 	window.setTimeout(function () {
 		if (adtest.offsetHeight != 0) {
-			// window.location = "/";
+			window.location = "/";
 		}
 		adtest.remove();
 	}, 100);
 	$.fn.extend({
-    animateCss: function (animationName) {
-        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-        $(this).addClass('animated ' + animationName).one(animationEnd, function() {
-            $(this).removeClass('animated ' + animationName);
-        });
-    }
+		animateCss: function (animationName) {
+			var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+			$(this).addClass('animated ' + animationName).one(animationEnd, function() {
+			$(this).removeClass('animated ' + animationName);
+			});
+		}
 	});
 	function ShowDonate(){
 		$('#donation').animateCss('headShake');
