@@ -3,6 +3,7 @@
 <title>Adblocker Detected | PlayMario.org</title>
 <style>
   @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+  @import url(assets/animate.css);
   #padding { text-align: center; padding: 36px }
   header{ height:90px;overflow:hidden;-ms-user-select:none;-moz-user-select:none;-webkit-user-select:none;user-select:none;background-color: black }
   h1 { font-family: 'Roboto', Helvetica, sans-serif;font-size: 50px }
@@ -69,9 +70,9 @@
 		}
 		adtest.remove();
 	}, 100);
-//	function Donate(){
-//		document.getElementById('donation').style.display = 'block';
-//	}
+	function Donate(){
+		document.getElementById('donation').className += 'tada animated'
+	}
 </script>
 </body>
 </html>
