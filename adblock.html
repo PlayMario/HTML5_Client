@@ -25,7 +25,7 @@
 </div>
 </article><br>
 <!--  =======================  DONATION FOR GAME START  ========================  -->
-<center id="donation">
+<center id="donation" class="animated">
 	<hr><br>
 	<table>
 		<tr><center><b>Help us to maintain this website and keep ads to a minimum:</b></center></tr>
@@ -71,7 +71,10 @@
 		adtest.remove();
 	}, 100);
 	function Donate(){
-		document.getElementById('donation').className = 'tada animated'
+		document.getElementById('donation').className += 'tada'
+	}
+	function RemoveTada(){
+		document.getElementById('donation').className -= 'tada'
 	}
 </script>
 </body>
