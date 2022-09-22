@@ -8,12 +8,10 @@
     <link href="assets/index.min.css" rel="stylesheet" />
     <link href="assets/modal.css" rel="stylesheet" />
     <link href="favicon.ico" rel="shortcut icon">
-    <script type="text/javascript" src="assets/popads.js"></script>
 </head>
 <body onload="setInterval(askForDonation, 1140000);">
 	<header>
 		<img id="Logo" src="assets/logo-large.png" alt="PlayMario.org" align="left" />
-		<iframe id="someMoneyWillHelp" data-aa='78349' src='https://ad.a-ads.com/78349?size=728x90' scrolling='no' style='width:728px; height:90px; border:0px; padding:0;overflow:hidden' allowtransparency='true' frameborder='0'></iframe>
 	</header>
 	
 	<section id="game">
@@ -28,19 +26,6 @@
 	PlayMario.org is a free HTML5 remake of Nintendo's original Super Mario Bros. It includes the original 32 levels, a random map generator, and over a dozen custom mods. Start playing Now...
 	</section>
 	
-	<script type="text/javascript">
-		var adtest = document.createElement('div');
-		adtest.innerHTML = '&nbsp;';
-		adtest.className = 'adsbox';
-		document.body.appendChild(adtest);
-		window.setTimeout(function () {
-			if (adtest.offsetHeight === 0) {
-				window.location = "/adblock.html";
-			}
-			adtest.remove();
-		}, 100);
-	</script>
-	
 	<section id="credits" class="section-text">
 		PlayMario.org was made possible first and foremost by Nintendo, who originally created Mario and has since maintained the series. It would also not have been possible without the dedicated efforts of the Mario fan community over the past three decades, in particular <a href="http://www.themushroomkingdom.net/" target="_blank" onClick="monolog.show();">themushroomkingdom.net</a>.
 	</section>
@@ -50,38 +35,6 @@
 	</section>
 	<br>
 
-	<center id="donation">
-		<hr><br>
-		<table>
-			<tr><center><b>Help us to maintain this website and keep ads to a minimum:</b></center></tr>
-			<tr>
-				<td>
-					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-						<input type="hidden" name="cmd" value="_s-xclick">
-						<input type="hidden" name="hosted_button_id" value="JHAK52H6YKBBJ">
-						<input type="hidden" name="on0" value="Donation Amount">Donate using PayPal:<br>
-						<select name="os0">
-							<option value="Coffee">Coffee $2.00 USD</option>
-							<option value="Beer">Beer $5.00 USD</option>
-							<option value="Movie">Movie $10.00 USD</option>
-							<option value="Surprise">Surprise $20.00 USD</option>
-						</select>
-				</td>
-				<td>&nbsp;</td>
-				<td>
-					<input type="hidden" name="currency_code" value="USD"><br>
-					<input type="image" src="assets/btn_donate.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
-					<img alt="" border="0" src="assets/pixel.gif" width="1" height="1"></form>
-				</td>
-				<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-				<td>&nbsp;|<br>or<br>&nbsp;|</td>
-				<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-				<td><br>
-				<a class="coinbase-button" data-code="fd15fab0e14fb04ba0049162b7938e50" data-button-style="donation_small" data-custom="COINBASEdonate9401" href="https://www.coinbase.com/checkouts/fd15fab0e14fb04ba0049162b7938e50">Donate Bitcoins</a><script src="https://www.coinbase.com/assets/button.js" type="text/javascript"></script>
-				</td>
-			</tr>
-		</table>
-	</center><br>
 
     <!--  =======================  GAME CORE FILES  ========================  -->
     <script src="References/AreaSpawnr-0.2.0.js" type="text/javascript"></script>
