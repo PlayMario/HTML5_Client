@@ -4,14 +4,8 @@ CACHE MANIFEST
 
 CACHE:
 /assets/index.min.css
-/assets/modal.css
-/assets/modal.js
 /assets/jquery-1.12.2.min.js
-/assets/popads.js
-/assets/btn_donate.gif
-/assets/bdg_now_accepting_pp.png
 /assets/logo-large.png
-/assets/coinbase.png
 /assets/loading.gif
 /assets/animate.css
 /favicon.ico
@@ -126,7 +120,7 @@ CACHE:
 /settings/touch.js
 /settings/ui.js
 /index.js
-/PlayMarioJas.js
+/PlayMario.js
 
 FALLBACK:
 # workaround to detect whether a 404 or No Internet.
